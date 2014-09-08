@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+#        article: masculino/femenino
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Crear nuevo snippet
+            reorder: Reordenar snippets
+            reorder_done: Reordenación de snippets completada
+          records:
+            title: Snippets
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay snippets todavía. Pulsa en "Crear nuevo Snippet" para crear tu primer snippet.
+          snippet:
+            view_live_html: Ver este snippet como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este snippet
+            delete: Borrar este snippet para siempre
+      snippets:
+        show:
+          other: Otros snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

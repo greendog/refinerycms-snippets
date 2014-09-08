@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Yeni Ekle Snippet
+            reorder: Tekrar sirala Snippets
+            reorder_done: Tekrar siralama tamamlandiSnippets
+          records:
+            title: Snippets
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Snippets yok henuz.  Tikla "Yeni Ekle Snippet" eklemek senin ilk snippet.
+          snippet:
+            view_live_html: Bunu canlu snippet goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle snippet
+            delete: Bunu Sil snippet sonsuza dek
+      snippets:
+        show:
+          other: Diger Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

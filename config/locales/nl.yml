@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Nieuwe Snippet toevoegen
+            reorder: De volgorde van de Snippets wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Snippet-volgorde
+          records:
+            title: Snippets
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Snippets. Druk op 'Nieuwe Snippet toevoegen' om de eerste toe te voegen.
+          snippet:
+            view_live_html: Deze snippet op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze snippet
+            delete: Deze snippet definitief verwijderen
+      snippets:
+        show:
+          other: Andere Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

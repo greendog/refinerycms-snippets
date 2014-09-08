@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Přidat Snippet
+            reorder: Řadit Snippets
+            reorder_done: Konec řazení Snippets
+          records:
+            title: Snippets
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Snippets. Zvolte "Přidat Snippet" pro přidání prvního snippet.
+          snippet:
+            view_live_html: Zobrazit náhled snippet<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit snippet
+            delete: Smazat snippet
+      snippets:
+        show:
+          other: Další Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

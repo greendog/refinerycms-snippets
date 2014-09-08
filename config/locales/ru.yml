@@ -1,0 +1,44 @@
+en:
+  refinery:
+    plugins:
+      snippets:
+        title: Сниппеты
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Создать сниппет
+            reorder: Изменить порядок
+            reorder_done: Done Reordering Snippets
+          records:
+            title: Сниппеты
+            sorry_no_results: Ничего не найдено!
+            no_items_yet: пока не создано ни одного сниппета.
+          snippet:
+            edit: Редактировать сниппет
+            delete: Удалить сниппет
+        pages:
+          tabs:
+            snippets_content:
+              please_save_page_before: Сохраните страницу чтобы добаить сниппеты
+            snippets_field:
+              active: Активные
+              inactive: Неактивные
+              add_after_body: Добавить после
+              add_before_body: Добавить до
+              after_body: После
+              before_body: До
+            snippets_list_item:
+              remove: Удалить
+              edit: Редактировать
+      snippets:
+        show:
+          other: Другие сниппеты
+  activerecord:
+    models:
+        refinery/snippet: сниппет
+        refinery/snippet_page_part: ассоциации сниппетов
+    attributes:
+      'refinery/snippets/snippet':
+        title: Название
+        body: Текст

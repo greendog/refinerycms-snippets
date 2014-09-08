@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Snippet
+            reorder: Réordonner les Snippets
+            reorder_done: Fin de réordonnancement des Snippets
+          records:
+            title: Snippets
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Snippet. Cliquer sur "Créer un(e) nouve(au/l/lle) Snippet" pour créer votre premi(er/ère) snippet.'
+          snippet:
+            view_live_html: Voir ce(t/tte) snippet <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) snippet
+            delete: Supprimer définitivement ce(t/tte) snippet
+      snippets:
+        show:
+          other: Autres Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

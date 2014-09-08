@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: Aggiungi Nuovo Snippet
+            reorder: Riordina Snippets
+            reorder_done: Termina il Riordino di Snippets
+          records:
+            title: Snippets
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Snippets. Clicca "Aggiungi Nuovo Snippet" per aggiungere il tuo primo snippet.
+          snippet:
+            view_live_html: Guarda live questo snippet <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo snippet
+            delete: Rimuovi per sempre questo snippet
+      snippets:
+        show:
+          other: Altri Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body

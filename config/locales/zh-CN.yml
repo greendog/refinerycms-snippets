@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      snippets:
+        title: Snippets
+    snippets:
+      admin:
+        snippets:
+          actions:
+            create_new: 建立新的 Snippet
+            reorder: 对 Snippets 重新排序
+            reorder_done: 对 Snippets 的重新排序结束
+          records:
+            title: Snippets
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Snippets yet. Click "Add New Snippet" to add your first snippet.
+            no_items_yet: 目前没有 Snippets . 点击 "Add New Snippet" 创建一个snippet.
+          snippet:
+            view_live_html: 查看 snippet 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 snippet
+            delete: 永久删除 snippet
+      snippets:
+        show:
+          other: 其他 Snippets
+  activerecord:
+    attributes:
+      'refinery/snippets/snippet':
+        title: Title
+        body: Body
