@@ -29,14 +29,15 @@ module Refinery
 
         Refinery::Pages::PagePartSectionPresenter.class_eval do
           def initialize(page_part)
+            super()
+            self.id = convert_title_to_id(page_part.title) if page_part.title
+
             content = ""
             content += page_part.snippets.before.map{ |snippet| content_or_render_of(snippet) }.join
             content += page_part.body
             content += page_part.snippets.after.map{ |snippet| content_or_render_of(snippet) }.join
 
-            super()
-            self.fallback_html = page_part.body.html_safe if page_part.body
-            self.id = convert_title_to_id(page_part.title) if page_part.title
+            self.fallback_html = content.html_safe
           end
 
           def content_or_render_of(snippet)

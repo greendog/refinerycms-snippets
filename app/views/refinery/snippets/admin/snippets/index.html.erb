@@ -4,4 +4,3 @@
 <aside id='actions'>
   <%= render 'actions' %>
 </aside>
-<%= render '/refinery/admin/make_sortable', options: {tree: false} if !searching? and ::Refinery::Snippets::Admin::SnippetsController.sortable? and ::Refinery::Snippets::Snippet.many? %>

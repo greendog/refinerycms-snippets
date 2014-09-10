@@ -8,18 +8,4 @@
     <%= link_to t('.create_new'), refinery.new_snippets_admin_snippet_path,
                  :class => "add_icon" %>
   </li>
-<% if !searching? && ::Refinery::Snippets::Admin::SnippetsController.sortable? && ::Refinery::Snippets::Snippet.many? %>
-  <li>
-    <%= link_to t('.reorder', :what => "Snippets"),
-                 refinery.snippets_admin_snippets_path,
-                 :id => "reorder_action",
-                 :class => "reorder_icon" %>
-
-    <%= link_to t('.reorder_done', :what => "Snippets"),
-                 refinery.snippets_admin_snippets_path,
-                 :id => "reorder_action_done",
-                 :style => "display: none;",
-                 :class => "reorder_icon" %>
-  </li>
-<% end %>
 </ul>

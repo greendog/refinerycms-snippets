@@ -1,6 +1,6 @@
 module Refinery
   module Snippets
-    class Snippet < ActiveRecord::Base #Refinery::Core::BaseModel
+    class Snippet < Refinery::Core::BaseModel
       self.table_name = 'refinery_snippets'
 
 
