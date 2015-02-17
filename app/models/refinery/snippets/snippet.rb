@@ -10,8 +10,6 @@ module Refinery
 
       acts_as_indexed :fields => [:title, :body]
 
-      validates :title, :presence => true, :uniqueness => true
-
       translates :body
 
       has_many :snippet_page_parts, :dependent => :destroy, :class_name => "Refinery::Snippets::SnippetPagePart"
