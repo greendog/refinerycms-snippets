@@ -23,7 +23,7 @@ Add this line to your applications `Gemfile`
 Next run
 
     bundle install
-    rails g refinerycms:snippets
+    rails g refinery:snippets
     rake db:migrate
 
 ## Usage
