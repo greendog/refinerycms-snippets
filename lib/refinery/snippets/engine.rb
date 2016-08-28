@@ -17,6 +17,12 @@ module Refinery
           plugin.pathname = root
           
         end
+
+        Rails.application.config.assets.precompile += %w(
+          page-snippet-picker.css
+          page-snippet-picker.js
+          part-snippets-select.js
+        )
       end
 
       config.to_prepare do
