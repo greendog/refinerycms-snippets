@@ -17,6 +17,12 @@ module Refinery
           plugin.pathname = root
           
         end
+
+        Rails.application.config.assets.precompile += %w(
+          page-snippet-picker.css
+          page-snippet-picker.js
+          part-snippets-select.js
+        )
       end
 
       config.to_prepare do
@@ -30,7 +36,7 @@ module Refinery
         Refinery::Pages::PagePartSectionPresenter.class_eval do
           def initialize(page_part)
             super()
-            self.id = convert_title_to_id(page_part.title) if page_part.title
+            self.id = page_part.slug.to_sym if page_part.slug
 
             content = ""
             content += page_part.snippets.before.map{ |snippet| content_or_render_of(snippet) }.join
